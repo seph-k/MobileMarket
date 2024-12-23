@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context="com.example.login.RatingsActivity">
+
+    <Button
+        android:id="@+id/backProductButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_24" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_layout"
+        android:background="#75FFFFFF"
+        android:layout_below="@+id/backProductButton">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="Provide your own rating:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:id="@+id/linlay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2">
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Rating:"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/edtRating"
+                android:layout_width="300dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="34dp"
+            android:text="*Please provide a rating out of 5"
+            android:textSize="13dp"
+            android:textColor="@color/purple_200"
+            android:id="@+id/warning"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linlay3"
+            android:layout_below="@+id/warning">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review:"
+                android:textColor="@color/black"
+                android:id="@+id/review"
+                android:textSize="19dp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/edtReview"
+                android:layout_width="292dp"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Add_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:layout_centerHorizontal="true"
+            android:text="Add Review"
+            android:layout_below="@id/linlay3"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/scroll"
+        android:layout_below="@+id/rel_layout"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:padding="16dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</RelativeLayout>

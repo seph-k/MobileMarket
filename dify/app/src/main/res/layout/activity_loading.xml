@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context="com.example.login.LoadingActivity">
+    
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_below="@id/sloganTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="Welcome to"
+        android:textSize="27dp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logoImageView"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/welcomeTextView"
+        />
+
+    <TextView
+        android:id="@+id/sloganTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="where you let someone do it for you"
+        android:textSize="20dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingTextView"
+        android:text="Please wait while we load the app"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:typeface="monospace"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="100dp"
+        />
+
+</RelativeLayout>

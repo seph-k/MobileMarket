@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dify.</string>
+    <string-array name="spinner">
+        <item>Newest to oldest</item>
+        <item>Oldest to newest</item>
+        <item>Price lowest to highest</item>
+        <item>Price highest to lowest</item>
+    </string-array>
+</resources>
